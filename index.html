@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Aprenda a Programar</title>
+<meta charset="UTF-8">
+<title>Programador Futurista</title>
+<style>
+  /* Fundo escuro futurista */
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0a0a;
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+  }
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #0f172a;
-      color: #ffffff;
-      text-align: center;
-      padding: 40px;
-    }
+  /* Quadrado neon */
+  .neon-box {
+    background-color: rgba(0,0,0,0.5);
+    border: 2px solid #00ffff;
+    border-radius: 20px;
+    padding: 40px;
+    width: 450px;
+    text-align: center;
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #00ffff;
+    animation: glow 2s infinite alternate;
+  }
 
-    h1 {
-      color: #38bdf8;
-    }
+  @keyframes glow {
+    0% { box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #00ffff; }
+    100% { box-shadow: 0 0 40px #ff00ff, 0 0 80px #ff00ff, 0 0 120px #ff00ff; }
+  }
 
-    button {
-      background-color: #22c55e;
-      border: none;
-      padding: 12px 20px;
-      font-size: 16px;
-      border-radius: 8px;
-      cursor: pointer;
-    }
+  .neon-box h1 {
+    color: #00ffff;
+    font-size: 28px;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #ff00ff;
+  }
 
-    button:hover {
-      background-color: #16a34a;
-    }
-  </style>
+  .neon-box p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    text-shadow: 0 0 3px #00ffff;
+    margin-top: 15px;
+  }
+
+  /* Botão futurista */
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #00ffff;
+    background-color: transparent;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    color: #ff00ff;
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff, 0 0 60px #ff00ff;
+  }
+</style>
 </head>
 
 <body>
 
-  <h1>📘 Aprenda Programação</h1>
-  <p>Este site ensina HTML, CSS e JavaScript</p>
-
-  <button onclick="mostrarMensagem()">Testar JavaScript</button>
-
-  <script>
-    function mostrarMensagem() {
-      alert("Parabéns! JavaScript funcionando 😎");
-    }
-  </script>
-
-</body>
-</html>
+<div class="neon-box">
+  <h1>Como se Tornar um Programador Profissional</h1>
+  <p>
+    Ser um programador profissional significa mais do que apenas escrever código.<br>
+    Você precisa aprender HTML, CSS e JavaScript, entender lógica de programação,<br>
+    praticar todos os dias, criar projetos reais e explorar frameworks modernos.<br>
+    Além disso, estudar algoritmos, controle de versões
